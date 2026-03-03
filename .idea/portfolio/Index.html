@@ -3,204 +3,891 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About | Marius Bejinariu — Media Developer</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Marius Bejinariu | Media Developer — Training, 3D &amp; Game Development</title>
+    <meta name="description" content="Portfolio of Marius Bejinariu — Media Developer specialising in training media, video, animation, 3D/2D, game and web development." />
+    <meta name="theme-color" content="#e11d2e" />
+    <meta property="og:type"        content="website" />
+    <meta property="og:title"       content="Marius Bejinariu | Media Developer — Training, 3D &amp; Game Development" />
+    <meta property="og:description" content="Portfolio of Marius Bejinariu — Media Developer specialising in training media, video, animation, 3D/2D, game and web development." />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23e11d2e'/></svg>" />
+    <link rel="stylesheet" href="Styles.css" />
 </head>
 
 <body>
-<!-- =========================
-     NAVBAR (consistent across pages)
-     ========================= -->
 <header>
     <nav class="nav" aria-label="Primary navigation">
-        <a class="brand" href="index.html">
-            <strong>Marius Bejinariu</strong>
-            <span>Media Developer</span>
-        </a>
+        <div class="nav-left">
+            <a class="nav-avatar" href="#top" aria-label="Back to top">
+                <img src="../assets/profile-placeholder.jpg" alt="Marius Bejinariu profile photo" loading="lazy">
+            </a>
+
+            <a class="brand" href="#top">
+                <strong>Marius Bejinariu</strong>
+                <span>Media Developer</span>
+            </a>
+        </div>
 
         <button id="menuBtn" class="menu-btn" type="button" aria-label="Toggle menu">Menu</button>
 
-        <div id="navLinks" class="nav-links">
-            <a data-nav href="index.html">About</a>
-            <a data-nav href="skills.html">Skills</a>
-            <a data-nav href="experience.html">Experience</a>
-            <a data-nav href="projects.html">Projects</a>
+        <div id="navLinks" class="nav-links" aria-label="Page sections">
+            <a data-nav href="#about">About</a>
+            <a data-nav href="#skills">Skills</a>
+            <a data-nav href="#experience">Experience</a>
+            <a data-nav href="#projects">Projects</a>
+            <a data-nav href="#contact">Contact</a>
         </div>
     </nav>
 </header>
 
 <main class="container" id="top">
-    <!-- =========================
-         ABOUT HERO
-         ========================= -->
-    <section class="hero">
+    <!-- ABOUT -->
+    <section class="hero" id="about">
+        <!-- LEFT: About copy -->
         <article class="card">
             <div class="card-inner">
                 <div class="kicker">Training Media • Video • Animation • 3D/2D • Game, Web &amp; Software</div>
                 <h1>Creative Training Media Developer with hands-on delivery experience across defence training, higher education and IT.</h1>
 
                 <p>
-                    I am a results-driven, creative training media developer, videographer and animator with experience in 3D, 2D,
-                    web and software development, project management and administration. With a successful track record delivering and
-                    implementing strategic projects in the Defence Training, Higher Education and IT sectors. I have demonstrated
-                    strong technical, organisational and communications skills and the confidence to deliver multiple projects in fast-paced environments.
+                    I am a results-driven, creative training media developer, videographer and animator with experience in 3D, 2D, web and software development, project management and administration. I also leverage AI-enabled workflows—such as generative content tools, AI-assisted scripting and storyboarding, automated captioning/transcription, and intelligent asset/tag management—to accelerate production, improve consistency, and scale content efficiently. With a successful track record delivering and implementing strategic projects in the Defence Training, Higher Education and IT sectors, I have demonstrated strong technical, organisational and communication skills, and the confidence to deliver multiple projects in fast-paced environments.
                 </p>
 
-                <p>As a Media Developer with 3+ years of experience, I am actively seeking a new professional challenge that allows me to expand my technical capabilities, refine my creative expertise, and contribute at a higher strategic level. I bring a proven ability to design, develop, and deliver high-quality media solutions that align with business objectives, engage audiences, and enhance brand value. With a strong foundation across digital content creation, multimedia production, and emerging platforms, I adapt quickly to new tools and workflows while maintaining a rigorous standard of execution. I am highly collaborative, commercially aware, and driven by continuous improvement, making me a dependable and forward-thinking asset to any organization looking to innovate, scale, and stay competitive in an evolving media landscape.</p>
+                <p> As a Media Developer with 3+ years of experience, I am actively seeking a new professional challenge that allows me to expand my technical capabilities, refine my creative expertise, and contribute at a higher strategic level. I bring a proven ability to design, develop, and deliver high-quality media solutions that align with business objectives, engage audiences, and enhance brand value—while integrating AI where it adds measurable value. With a strong foundation across digital content creation, multimedia production, and emerging platforms, I adapt quickly to new tools and workflows while maintaining a rigorous standard of execution. I am highly collaborative, commercially aware, and driven by continuous improvement, making me a dependable and forward-thinking asset to any organisation looking to innovate, scale, and stay competitive in an evolving media landscape. </p>
 
                 <div class="divider"></div>
 
-                <!-- =========================
-                     BUTTONS (fixed: no nested <a> tags)
-                     ========================= -->
                 <div class="btn-row">
-                    <!-- Ensure your PDF is located at: assets/cv/marius-bejinariu-media-developer-cv.pdf -->
                     <a class="btn"
-                       href="assets/cv/marius-bejinariu-media-developer-cv.pdf"
+                       href="../assets/cv/marius-bejinariu-media-developer-cv.pdf"
                        target="_blank"
                        rel="noopener noreferrer">
                         View CV (PDF)
                     </a>
-
                     <a class="btn secondary"
                        href="https://www.linkedin.com/in/marius-bejinariu-329267153/"
                        target="_blank"
                        rel="noopener noreferrer">
                         Explore My LinkedIn
                     </a>
-
-                    <a class="btn secondary" href="skills.html">Explore Skills</a>
-                    <a class="btn secondary" href="experience.html">Explore Experience</a>
-                    <a class="btn secondary" href="projects.html">Explore Projects</a>
+                    <a class="btn secondary" href="#skills">Explore Skills</a>
+                    <a class="btn secondary" href="#experience">Explore Experience</a>
+                    <a class="btn secondary" href="#projects">Explore Projects</a>
                 </div>
             </div>
         </article>
 
-        <!-- Profile card with replaceable photo -->
+        <!-- RIGHT: Photo + Quick Facts (stacked) -->
         <aside class="card profile">
-            <div class="photo">
-                <img src="assets/profile-placeholder.jpg" alt="Professional profile placeholder photo" />
-                <div class="photo-badge">Marius Bejinariu - Media Developer</div>
-            </div>
+            <div class="card-inner">
+                <div class="photo">
+                    <img src="../assets/profile-placeholder.jpg" alt="Professional profile placeholder photo" loading="lazy" />
+                    <div class="photo-badge">Marius Bejinariu - Media Developer</div>
+                </div>
 
-            <div class="meta">
-                <h2 style="margin:0 0 8px;">Quick Facts</h2>
-                <div class="pill">BA (Hons) Advertising and Marketing Communications (1st Class)</div>
-                <div class="pill">Volunteered for a non-profit organisation delivering critical care responsibilities to children with disabilities.</div>
-                <div class="pill">Visited 5 States in USA</div>
-                <div class="pill">Visited 3 Regions in Canada</div>
-                <div class="pill">Visited multiple European countries</div>
-                <div class="pill">Passionate about Game Development</div>
-                <div class="pill">Love playing Video Games</div>
-                <div class="pill">English &amp; Romanian (plus developing French/Italian)</div>
+                <div class="meta">
+                    <h2>Quick Facts</h2>
+                    <div class="pill">BA (Hons) Advertising and Marketing Communications (1st Class)</div>
+                    <div class="pill">Volunteered for a non-profit organisation delivering critical care responsibilities to children with disabilities.</div>
+                    <div class="pill">Love Traveling</div>
+                    <div class="pill">Passionate About Game Development</div>
+                    <div class="pill">Love Playing Video Games</div>
+                    <div class="pill">English &amp; Romanian (plus developing French/Italian)</div>
+                </div>
             </div>
         </aside>
     </section>
 
-    <!-- =========================
-         COMPANIES (Logos + links)
-         ========================= -->
-    <section class="section" aria-labelledby="companies-title">
-        <div class="section-head">
-            <div>
-                <h2 id="companies-title">Companies I’ve Worked With</h2>
-                <p>Selected employers and organisations from my background.</p>
+    <!-- TIMELINE: Skills → Experience → Projects -->
+    <section class="section">
+        <div class="timeline">
+
+            <!-- SKILLS -->
+            <div class="timeline-item" id="skills">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content">
+                    <section class="card">
+        <div class="card-inner">
+            <div class="kicker">Skills Overview</div>
+            <h1>Technical and creative capabilities</h1>
+            <p>
+                Skills are ordered with <strong>Programming &amp; Development</strong> and <strong>Software &amp; Tools</strong> first,
+                followed by supporting competencies.
+            </p>
+
+            <div class="btn-row">
+                <a class="btn" href="#projects">View Projects</a>
+                <a class="btn secondary" href="#experience">View Experience</a>
             </div>
-        </div>
-
-        <div class="companies-grid">
-            <a class="company-logo" href="https://www.beds.ac.uk/" target="_blank" rel="noopener noreferrer"
-               aria-label="University of Bedfordshire (opens in a new tab)">
-                <img src="assets/companies/university-of-bedfordshire.png" alt="University of Bedfordshire" loading="lazy">
-            </a>
-
-            <a class="company-logo" href="https://www.nandos.co.uk/" target="_blank" rel="noopener noreferrer"
-               aria-label="Nando's (opens in a new tab)">
-                <img src="assets/companies/nandos.png" alt="Nando's" loading="lazy">
-            </a>
-
-            <a class="company-logo" href="https://www.rtx.com/" target="_blank" rel="noopener noreferrer"
-               aria-label="Raytheon Technologies / RTX (opens in a new tab)">
-                <img src="assets/companies/raytheon-technologies.png" alt="Raytheon Technologies" loading="lazy">
-            </a>
-
-            <a class="company-logo" href="https://www.babcockinternational.com/" target="_blank" rel="noopener noreferrer"
-               aria-label="Babcock (opens in a new tab)">
-                <img src="assets/companies/babcock.png" alt="Babcock" loading="lazy">
-            </a>
-
-            <a class="company-logo" href="https://www.sgul.ac.uk/" target="_blank" rel="noopener noreferrer"
-               aria-label="City St George's, University of London (opens in a new tab)">
-                <img src="assets/companies/city-st-georges.png" alt="City St George's, University of London" loading="lazy">
-            </a>
-
-            <a class="company-logo" href="https://responsepersonnel.co.uk/" target="_blank" rel="noopener noreferrer"
-               aria-label="Response Personnel (opens in a new tab)">
-                <img src="assets/companies/response-recruitment.png" alt="Response Personnel" loading="lazy">
-            </a>
         </div>
     </section>
 
-    <!-- =========================
-         HIGHLIGHTS
-         ========================= -->
     <section class="section">
         <div class="section-head">
             <div>
-                <h2>What I Deliver</h2>
-                <p>Selected capability areas aligned to the responsibilities described in the CV.</p>
+                <h2>Programming &amp; Development</h2>
+                <p>Core programming skills used for web and software development.</p>
             </div>
         </div>
 
+        <div class="skills-grid">
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>C# (.NET)</h3>
+                    <p>Building tools and interactive experiences using C# and the .NET Framework.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/csharp.png" alt="C# icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Python</h3>
+                    <p>Scripting and automation for media pipelines, tooling, and general development tasks.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/python.png" alt="Python icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>C++</h3>
+                    <p>Performance-oriented development and engine-level work, particularly for interactive media.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/cpp.png" alt="C++ icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>JavaScript • HTML5 • CSS3</h3>
+                    <p>Front-end web development for responsive, interactive multimedia pages and interfaces.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/html-css-js.png" alt="HTML, CSS and JavaScript icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-head">
+            <div>
+                <h2>Software &amp; Tools</h2>
+                <p>Production tools across 3D, compositing, editing, and learning content development.</p>
+            </div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Autodesk Maya • Arnold</h3>
+                    <p>3D modelling/animation workflows and rendering for training and visual content.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/maya-arnold.png" alt="Autodesk Maya and Arnold icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Unreal Engine</h3>
+                    <p>Interactive 3D experiences and real-time content delivery.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/unreal.png" alt="Unreal Engine icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Unity</h3>
+                    <p>Real-time development, including C# workflows and VR course alignment.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/unity.png" alt="Unity icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Adobe Creative Suite</h3>
+                    <p>Creative production across design, video editing, and motion graphics.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/adobe.png" alt="Adobe Creative Suite icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Articulate Storyline</h3>
+                    <p>Interactive learning modules and training content assembly.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/storyline.png" alt="Articulate Storyline icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Jira Software</h3>
+                    <p>Collaboration, documentation, and task tracking to support delivery.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/confluence.png" alt="Jira Software icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-head">
+            <div>
+                <h2>Supporting Skills</h2>
+                <p>Marketing/analytics, design, office productivity, and content management.</p>
+            </div>
+        </div>
+
+        <div class="skills-grid">
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Marketing &amp; Analytics</h3>
+                    <p>SEO, SEMrush, Screaming Frog, Google Analytics, social media and digital marketing.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/marketing.png" alt="Marketing and analytics icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Design &amp; Creative</h3>
+                    <p>Graphic design, design research, and copywriting for multimedia deliverables.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/design.png" alt="Design icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Office &amp; Productivity</h3>
+                    <p>Word, Excel, PowerPoint, Outlook, O365, Microsoft Project, and cybersecurity awareness.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/office.png" alt="Office productivity icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="tile">
+                <div class="tile-inner">
+                    <h3>Customer &amp; Content Management</h3>
+                    <p>CRM and CMS familiarity to support content delivery and stakeholder workflows.</p>
+                    <div class="cert">
+                        <img src="../assets/icons/crm-cms.png" alt="CRM and CMS icon" loading="lazy" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                </div>
+            </div>
+
+            <!-- EXPERIENCE -->
+            <div class="timeline-item" id="experience">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content">
+                    <section class="card">
+        <div class="card-inner">
+            <div class="kicker">Experience</div>
+            <h1>Professional experience</h1>
+            <p>Expand each section to view key responsibilities and achievements.</p>
+
+            <div class="companies-grid">
+                <a class="company-logo" href="https://www.beds.ac.uk/" target="_blank" rel="noopener noreferrer" aria-label="University of Bedfordshire (opens in a new tab)">
+                    <img src="../assets/companies/university-of-bedfordshire.png" alt="University of Bedfordshire" loading="lazy" />
+                </a>
+                <a class="company-logo" href="https://www.nandos.co.uk/" target="_blank" rel="noopener noreferrer" aria-label="Nando's (opens in a new tab)">
+                    <img src="../assets/companies/nandos.png" alt="Nando's" loading="lazy" />
+                </a>
+                <a class="company-logo" href="https://www.rtx.com/" target="_blank" rel="noopener noreferrer" aria-label="Raytheon Technologies / RTX (opens in a new tab)">
+                    <img src="../assets/companies/raytheon-technologies.png" alt="Raytheon Technologies" loading="lazy" />
+                </a>
+                <a class="company-logo" href="https://www.babcockinternational.com/" target="_blank" rel="noopener noreferrer" aria-label="Babcock (opens in a new tab)">
+                    <img src="../assets/companies/babcock.png" alt="Babcock" loading="lazy" />
+                </a>
+                <a class="company-logo" href="https://www.sgul.ac.uk/" target="_blank" rel="noopener noreferrer" aria-label="City St George's, University of London (opens in a new tab)">
+                    <img src="../assets/companies/city-st-georges.png" alt="City St George's, University of London" loading="lazy" />
+                </a>
+                <a class="company-logo" href="https://responsepersonnel.co.uk/" target="_blank" rel="noopener noreferrer" aria-label="Response Recruitment (opens in a new tab)">
+                    <img src="../assets/companies/response-recruitment.png" alt="Response Recruitment" loading="lazy" />
+                </a>
+            </div>
+
+            <div class="btn-row">
+                <a class="btn" href="#projects">Review Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
         <div class="grid">
-            <div class="tile col-4">
+            <div class="tile col-6">
                 <div class="tile-inner">
-                    <h3>Training Media Production</h3>
-                    <p>Training media, onsite graphics, storyboards, and scripts for learning content.</p>
-                    <div class="badge-row">
-                        <span class="badge">Video</span>
-                        <span class="badge">Animation</span>
-                        <span class="badge">Onsite Graphics</span>
-                        <span class="badge">3D Models</span>
-                        <span class="badge">Office 365</span>
-                        <span class="badge">Articulate Storyline</span>
-                        <span class="badge">Multimedia</span>
-                        <span class="badge">Marketing Campaigns</span>
+                    <h2 style="margin:0 0 8px;">RaytheonUK</h2>
+                    <p>
+                        Produced and delivered multimedia training content across digital, print, and onsite formats, working closely with Training Designers and SMEs. Captured and edited photo and video assets, ensured compliance with MoD standards, and acted as the primary client contact for media delivery. Maintained branding, media archives, and tracking systems while ensuring adherence to health and safety procedures.
+                    </p>
+
+                    <div class="accordion">
+                        <div class="acc-item">
+                            <button class="acc-btn" type="button" aria-expanded="false">
+                                Media Developer 01 May 2025 – Present: Key responsibilities (expand)
+                                <span class="chev" aria-hidden="true"></span>
+                            </button>
+
+                            <div class="acc-panel">
+                                <div class="panel-inner">
+                                    <ul>
+                                        <li>Produced Training Media and onsite graphics.</li>
+                                        <li>Developed web, digital, and print-based multimedia products to meet client requirements, priorities, and timeframes which balance user needs with business goals and technical capabilities.</li>
+                                        <li>Captured and edited photo and video in order to create content for Training requirements.</li>
+                                        <li>Identified, supported, and implemented the creation of new multimedia training materials in collaboration with Training Design (TD) and Subject Matter Experts (SMEs).</li>
+                                        <li>Ensured compliance (where applicable) with MoD/customer regulations and procedures including DSAT and JSP 823.</li>
+                                        <li>Created storyboards and scripts for training content.</li>
+                                        <li>Acted as the client primary point of contact for the Sultan EMTC Media Team.</li>
+                                        <li>Liaised with clients to discuss, interpret, and develop their needs; pushed creativity, challenged established thinking, and discovered new and innovative ways of problem-solving.</li>
+                                        <li>Worked with others to ensure training solutions are developed to the highest quality.</li>
+                                        <li>Maintained a high awareness of new emerging learning technologies and media.</li>
+                                        <li>Ensured that all materials produced are appropriately compiled in line with relevant branding guidelines.</li>
+                                        <li>Managed and curated an electronic archive of all creative content, adding metadata for easy searching by keyword, media type, and subject.</li>
+                                        <li>Maintained a comprehensive record of all media tasks using the team's Media Request Tracker.</li>
+                                        <li>Ensured Company health, safety and environmental procedures are implemented and complied with at all times.</li>
+                                        <li>Undertook any other reasonable duties within your capabilities, as determined by Media Manager.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tile col-6">
+                <div class="tile-inner">
+                    <h2 style="margin:0 0 8px;">Babcock</h2>
+                    <p>
+                        Created and managed multimedia training materials, including video, photography, and visual assets, in collaboration with stakeholders. Served as the main client liaison, ensured regulatory compliance and branding standards, and maintained organised media archives and delivery tracking.
+                    </p>
+
+                    <div class="accordion">
+                        <div class="acc-item">
+                            <button class="acc-btn" type="button" aria-expanded="false">
+                                Media Developer 23 Oct 2023 – 01 May 2025: Key responsibilities (expand)
+                                <span class="chev" aria-hidden="true"></span>
+                            </button>
+
+                            <div class="acc-panel">
+                                <div class="panel-inner">
+                                    <ul>
+                                        <li>Produced Training Media and onsite graphics.</li>
+                                        <li>Developed web, digital, and print-based multimedia products to meet client requirements, priorities, and timeframes which balance user needs with business goals and technical capabilities.</li>
+                                        <li>Captured and edited photo and video in order to create content for Training requirements.</li>
+                                        <li>Identified, supported, and implemented the creation of new multimedia training materials in collaboration with Training Design (TD) and Subject Matter Experts (SMEs).</li>
+                                        <li>Ensured compliance (where applicable) with MoD/customer regulations and procedures including DSAT and JSP 823.</li>
+                                        <li>Created storyboards and scripts for training content.</li>
+                                        <li>Acted as the client primary point of contact for the Sultan EMTC Media Team.</li>
+                                        <li>Liaised with clients to discuss, interpret, and develop their needs; pushed creativity, challenged established thinking, and discovered new and innovative ways of problem-solving.</li>
+                                        <li>Worked with others to ensure training solutions are developed to the highest quality.</li>
+                                        <li>Maintained a high awareness of new emerging learning technologies and media.</li>
+                                        <li>Ensured that all materials produced are appropriately compiled in line with relevant branding guidelines.</li>
+                                        <li>Managed and curated an electronic archive of all creative content, adding metadata for easy searching by keyword, media type, and subject.</li>
+                                        <li>Maintained a comprehensive record of all media tasks using the team's Media Request Tracker.</li>
+                                        <li>Ensured Company health, safety and environmental procedures are implemented and complied with at all times.</li>
+                                        <li>Undertook any other reasonable duties within your capabilities, as determined by Media Manager.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tile col-6">
+                <div class="tile-inner">
+                    <h2 style="margin:0 0 8px;">Nando’s</h2>
+                    <p>
+                        Supported a portfolio of infrastructure projects and business-critical platforms, including Wi-Fi, VOIP,
+                        network upgrades, training support and GDPR compliance activities.
+                    </p>
+
+                    <div class="accordion">
+                        <div class="acc-item">
+                            <button class="acc-btn" type="button" aria-expanded="false">
+                                Junior Project Manager June 2018 – July 2019 — Key achievements (expand)
+                                <span class="chev" aria-hidden="true"></span>
+                            </button>
+
+                            <div class="acc-panel">
+                                <div class="panel-inner">
+                                    <ul>
+                                        <li>Identified and realised annual savings of £160k by identifying and decommissioning legacy PSTN network and ADSL services, enabling the funding of other small initiatives.</li>
+                                        <li>Coordinated and delivered 416 network switches, increasing operational capacity by 50%, with Product Owner responsibility for £750k.</li>
+                                        <li>Supported and monitored VOIP migrations by ensuring 0% missed engineering visits to business units, and by identifying and escalating issues and risks to the senior project manager.</li>
+                                        <li>Delivered and managed the process for ad-hoc and small change requests for the restaurant infrastructure teams.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tile col-6">
+                <div class="tile-inner">
+                    <h2 style="margin:0 0 8px;">University of Bedfordshire</h2>
+                    <p>
+                        Marketing, communications and project support roles across Careers and Employability initiatives.
+                    </p>
+
+                    <div class="accordion">
+                        <div class="acc-item">
+                            <button class="acc-btn" type="button" aria-expanded="false">
+                                Communications and Projects Officer Aug 2021 – Dec 2021: Key achievements (expand)
+                                <span class="chev" aria-hidden="true"></span>
+                            </button>
+
+                            <div class="acc-panel">
+                                <div class="panel-inner">
+                                    <ul>
+                                        <li>Created marketing content for projects throughout the Careers Service, including social media posts and promotional materials using Adobe Creative Suite.</li>
+                                        <li>Supported the Graduate Outcomes Manager in the preparation and provision of data, including analysis of projects designed to support graduates.</li>
+                                        <li>Conducted research and developed a database of SEMLEP organisations offering career opportunities for final year students and graduates.</li>
+                                        <li>Supported data analysis for the Graduate Advancement Programme to improve quality and equity in line with APP.</li>
+                                        <li>Produced graphic and video marketing materials in collaboration with the Handshake platform in line with relevant brand guidelines.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="acc-item">
+                            <button class="acc-btn" type="button" aria-expanded="false">
+                                Graduate Marketing Assistant Mar 2021 – Aug 2021
+                                <span class="chev" aria-hidden="true"></span>
+                            </button>
+
+                            <div class="acc-panel">
+                                <div class="panel-inner">
+                                    <ul>
+                                        <li>Designed leaflets, booklets, posters, covers, banners, social media posts, stories, e-mail communication and logos for Careers and Employability.</li>
+                                        <li>Conveyed, proposed and presented marketing strategies and plans for promoting a Career Development Award aimed at students and graduates.</li>
+                                        <li>Contributed to student and graduate focus groups researching opinions on rebranding the careers service.</li>
+                                        <li>Increased Instagram following by 24% in 3 months and reached 48% more accounts than usual via posts, stories and IGTV videos.</li>
+                                        <li>Increased Facebook and Twitter reach by 25% in 6 months.</li>
+                                        <li>Designed work for projects including the Bedfordshire Career Development Award, Careers Summer Programme 2021, return to campus and Graduate Outcomes communications.</li>
+                                        <li>Conducted research on essential employer graduate skills during the COVID-19 pandemic.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            <div class="tile col-4">
+            <div class="tile col-6">
                 <div class="tile-inner">
-                    <h3>Web, Digital &amp; Print</h3>
-                    <p>Multimedia products delivered to requirements, priorities, and timeframes.</p>
-                    <div class="badge-row">
-                        <span class="badge">Unity Projects</span>
-                        <span class="badge">Unreal Engine</span>
-                        <span class="badge">3D Maya/Blender</span>
-                        <span class="badge">HTML5</span>
-                        <span class="badge">CSS3</span>
-                        <span class="badge">JavaScript</span>
-                        <span class="badge">Simulators</span>
-                        <span class="badge">Emulators</span>
-                        <span class="badge">C#</span>
-                        <span class="badge">C++</span>
+                    <h2 style="margin:0 0 8px;">St George’s, University of London</h2>
+                    <p>
+                        Administrative support across research institutes, communications, events and digital content updates.
+                    </p>
+
+                    <div class="accordion">
+                        <div class="acc-item">
+                            <button class="acc-btn" type="button" aria-expanded="false">
+                                Administrative Assistant Apr 2022 – Aug 2023: Key achievements (expand)
+                                <span class="chev" aria-hidden="true"></span>
+                            </button>
+
+                            <div class="acc-panel">
+                                <div class="panel-inner">
+                                    <ul>
+                                        <li>Produced newsletters for three Research Institutes by gathering relevant information, coordinating with academic staff and distributing to mailing lists.</li>
+                                        <li>Assisted in maintaining webpage content related to events, questionnaires, academic training and research operations using a CMS.</li>
+                                        <li>Supported organisation of major local, national and international meetings, including annual events and research days.</li>
+                                        <li>Served as an ambassador for St George’s, meeting visitors and handling newsletter queries.</li>
+                                        <li>Contributed to social media activities by managing and monitoring platforms (e.g., Twitter) for university events.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tile col-6">
+                <div class="tile-inner">
+                    <h2 style="margin:0 0 8px;">Response Personnel</h2>
+                    <p>
+                        Marketing and social media performance improvements, with focus on growth, reach and engagement.
+                    </p>
+
+                    <div class="accordion">
+                        <div class="acc-item">
+                            <button class="acc-btn" type="button" aria-expanded="false">
+                                Social Media and Marketing Consultant Nov 2021 – Sep 2023: Key achievements (expand)
+                                <span class="chev" aria-hidden="true"></span>
+                            </button>
+
+                            <div class="acc-panel">
+                                <div class="panel-inner">
+                                    <ul>
+                                        <li>Built LinkedIn following by 187.5% within an 8-month period.</li>
+                                        <li>Increased Facebook following by 113%, page reach by 147% and page visits by 39.8% within an 8-month period.</li>
+                                        <li>Designed marketing content, including social media posts and promotional materials.</li>
+                                        <li>Created engaging content for social media platforms and produced promotional materials.</li>
+                                        <li>Implemented strategies to increase brand awareness and drive social media engagement.</li>
+                                        <li>Monitored social media trends and recommended campaign adjustments based on performance.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+                </div>
+            </div>
+
+            <!-- PROJECTS -->
+            <div class="timeline-item" id="projects">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content">
+                    <section class="card">
+        <div class="card-inner">
+            <div class="kicker">Projects</div>
+            <h1>Project showcase</h1>
+            <p>
+                Here are my projects, Certain 2D and 3D models cannot be displayed due to Non-Disclosure Agreements with the UK Ministry of Defence.
+            </p>
+
+            <div class="divider"></div>
+
+            <div class="kicker">Jump to a project</div>
+            <div class="btn-row">
+                <a class="btn secondary" href="#unity-webgl-demo">Unity WebGL Functional 3D Item Inspector</a>
+                <a class="btn secondary" href="#unity-webgl-demo-2">Unity WebGL 3D model inspector</a>
+                <a class="btn secondary" href="#custom-graphics-gallery">Graphics Gallery</a>
+                <a class="btn secondary" href="#animations">Animations Gallery</a>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="btn-row">
+                <a class="btn" href="#skills">Back to Skills</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="section-head">
+            <div>
+                <h2>Project Templates</h2>
+                <p>Timeline-style layout: WebGL demos first, followed by galleries for visuals and animations.</p>
+            </div>
+        </div>
+
+        <div class="timeline">
+
+            <!-- =========================
+                 WebGL Demo #1
+                 ========================= -->
+            <div class="timeline-item" id="unity-webgl-demo">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content tile">
+                    <div class="tile-inner">
+                        <h3>Unity Interactive 3D Item Inspector 6.3 LTS</h3>
+                        <p>
+                            Here is my 3D Item inspector project. Please Click -> <strong>Load</strong> to start. Fullscreen recommended for best experience. Please note that certain text and some 2D/3D assets cannot be displayed and have been replaced due to non-disclosure agreements with the UK Ministry of Defence.
+                        </p>
+
+                        <!-- Toolbar -->
+                        <div class="unity-toolbar" role="group" aria-label="WebGL controls">
+                            <button class="btn secondary unity-ctl"
+                                    type="button"
+                                    data-unity-action="load"
+                                    data-unity-target="unityWebglFrame">
+                                Load
+                            </button>
+
+                            <button class="btn secondary unity-ctl"
+                                    type="button"
+                                    data-unity-action="fullscreen"
+                                    data-unity-target="unityWebglFrame">
+                                Fullscreen
+                            </button>
+                        </div>
+
+                        <!-- Responsive frame (click-to-load + skeleton) -->
+                        <div class="project-media project-media-16x9 unity-embed"
+                             data-unity-embed
+                             data-unity-src="unity-builds/item-inspector/index.html"
+                             aria-label="Unity WebGL project">
+                            <iframe
+                                    id="unityWebglFrame"
+                                    class="unity-webgl-iframe"
+                                    title="Unity WebGL project"
+                                    loading="lazy"
+                                    allow="fullscreen"
+                                    allowfullscreen
+                            ></iframe>
+
+                            <!-- Click to load overlay -->
+                            <div class="unity-overlay unity-overlay-click" data-unity-overlay="click">
+                                <div class="overlay-inner">
+                                    <strong>Click to load</strong>
+                                    <p class="muted">Loads the Interactive 3D Item Inspector (may take a moment).</p>
+                                    <div class="btn-row" style="justify-content:center; margin-top:10px;">
+                                        <button class="btn"
+                                                type="button"
+                                                data-unity-action="load"
+                                                data-unity-target="unityWebglFrame">
+                                            Load
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Loading skeleton overlay -->
+                            <div class="unity-overlay unity-overlay-loading" data-unity-overlay="loading" hidden>
+                                <div class="unity-skeleton" aria-hidden="true"></div>
+                                <div class="overlay-inner">
+                                    <strong>Loading…</strong>
+                                    <p class="muted">This can take a few seconds in the browser.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="badge-row" style="margin-top:12px;">
+                            <span class="badge">Unity</span>
+                            <span class="badge">WebGL</span>
+                            <span class="badge">Interactive</span>
+                            <span class="badge">Maya</span>
+                            <span class="badge">3D</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="tile col-4">
-                <div class="tile-inner">
-                    <h3>Client &amp; SME Collaboration</h3>
-                    <p>Interpret needs, challenge assumptions, and iterate toward high-quality outcomes.</p>
-                    <div class="badge-row">
-                        <span class="badge">Stakeholders</span>
-                        <span class="badge">SMEs</span>
-                        <span class="badge">Quality Focus</span>
-                        <span class="badge">Jira</span>
-                        <span class="badge">HubSpot</span>
+            <!-- =========================
+                 WebGL Demo #2
+                 ========================= -->
+            <div class="timeline-item" id="unity-webgl-demo-2">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content tile">
+                    <div class="tile-inner">
+                        <h3>Unity WebGL 3D model inventory</h3>
+                        <p>
+                            Here is my 3D Inventory. Please Click -> <strong>Load</strong> to start. Fullscreen recommended for best experience. Please note that certain text and some 2D/3D assets cannot be displayed and have been replaced due to non-disclosure agreements with the UK Ministry of Defence.
+                        </p>
+
+                        <!-- Toolbar -->
+                        <div class="unity-toolbar" role="group" aria-label="WebGL controls (second)">
+                            <button class="btn secondary unity-ctl"
+                                    type="button"
+                                    data-unity-action="load"
+                                    data-unity-target="unityWebglFrame2">
+                                Load
+                            </button>
+
+                            <button class="btn secondary unity-ctl"
+                                    type="button"
+                                    data-unity-action="fullscreen"
+                                    data-unity-target="unityWebglFrame2">
+                                Fullscreen
+                            </button>
+                        </div>
+
+                        <div class="project-media project-media-16x9 unity-embed"
+                             data-unity-embed
+                             data-unity-src="unity-builds/another-project/index.html"
+                             aria-label="Unity WebGL project (second)">
+                            <iframe
+                                    id="unityWebglFrame2"
+                                    class="unity-webgl-iframe"
+                                    title="Unity WebGL project (second)"
+                                    loading="lazy"
+                                    allow="fullscreen"
+                                    allowfullscreen
+                            ></iframe>
+
+                            <div class="unity-overlay unity-overlay-click" data-unity-overlay="click">
+                                <div class="overlay-inner">
+                                    <strong>Click to load</strong>
+                                    <p class="muted">Loads the 3D inventory.</p>
+                                    <div class="btn-row" style="justify-content:center; margin-top:10px;">
+                                        <button class="btn"
+                                                type="button"
+                                                data-unity-action="load"
+                                                data-unity-target="unityWebglFrame2">
+                                            Load
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="unity-overlay unity-overlay-loading" data-unity-overlay="loading" hidden>
+                                <div class="unity-skeleton" aria-hidden="true"></div>
+                                <div class="overlay-inner">
+                                    <strong>Loading…</strong>
+                                    <p class="muted">This can take a few seconds in the browser.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="badge-row" style="margin-top:12px;">
+                            <span class="badge">Unity</span>
+                            <span class="badge">WebGL</span>
+                            <span class="badge">Interactive</span>
+                            <span class="badge">Maya</span>
+                            <span class="badge">3D</span>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- =========================
+                 Custom graphics gallery
+                 ========================= -->
+            <div class="timeline-item" id="custom-graphics-gallery">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content tile">
+                    <div class="tile-inner">
+                        <h3>Custom Graphics Gallery</h3>
+                        <p>
+                            Here are my graphics projects. Please browse using the left/right arrow buttons or the A/D keys. Please note that certain text and some 2D/3D assets cannot be displayed and have been replaced due to non-disclosure agreements with the UK Ministry of Defence.
+                        </p>
+
+                        <div class="project-media project-media-4x3 project-media-contain" aria-label="Project gallery">
+                            <img
+                                    id="projectGalleryImage"
+                                    class="gallery-image"
+                                    src="../assets/gallery/placeholder-1.jpg"
+                                    alt="Project gallery image"
+                                    loading="lazy"
+                            />
+
+                            <div class="gallery-controls">
+                                <button class="gallery-btn" type="button" id="galleryPrev" aria-label="Previous image">←</button>
+                                <div class="gallery-meta" aria-live="polite">
+                                    <span id="galleryCounter">1 / 1</span>
+                                </div>
+                                <button class="gallery-btn" type="button" id="galleryNext" aria-label="Next image">→</button>
+                            </div>
+                        </div>
+
+                        <div class="badge-row" style="margin-top:12px;">
+                            <span class="badge">Graphics</span>
+                            <span class="badge">Photography</span>
+                            <span class="badge">Illustrator</span>
+                            <span class="badge">Photoshop</span>
+                            <span class="badge">Indesign</span>
+                            <span class="badge">Portfolio</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =========================
+                 Animations gallery
+                 ========================= -->
+            <div class="timeline-item" id="animations">
+                <div class="timeline-dot" aria-hidden="true"></div>
+                <div class="timeline-content tile">
+                    <div class="tile-inner">
+                        <h3>Animations</h3>
+                        <p>
+                            Here are my animation projects. Please browse using the left/right arrow buttons or the A/D keys. Please note that certain text and some 2D/3D assets cannot be displayed and have been replaced due to non-disclosure agreements with the UK Ministry of Defence.
+                        </p>
+
+                        <div class="project-media project-media-4x3 project-media-contain" aria-label="Animations gallery">
+                            <img
+                                    id="animationGalleryImage"
+                                    class="gallery-image"
+                                    src="../assets/animations/placeholder-1.gif"
+                                    alt="Animation preview"
+                                    loading="lazy"
+                            />
+
+                            <div class="gallery-controls">
+                                <button class="gallery-btn" type="button" id="animPrev" aria-label="Previous animation">←</button>
+                                <div class="gallery-meta" aria-live="polite">
+                                    <span id="animCounter">1 / 1</span>
+                                </div>
+                                <button class="gallery-btn" type="button" id="animNext" aria-label="Next animation">→</button>
+                            </div>
+                        </div>
+
+                        <div class="badge-row" style="margin-top:12px;">
+                            <span class="badge">Animation</span>
+                            <span class="badge">GIF</span>
+                            <span class="badge">Motion</span>
+                            <span class="badge">Blender</span>
+                            <span class="badge">Maya</span>
+                            <span class="badge">After Effects</span>
+                            <span class="badge">Premiere Pro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="card contact-card">
+        <div class="card-inner">
+            <div class="kicker">Get In Touch</div>
+            <h1>Let&#8217;s work together</h1>
+            <p>
+                Whether you have a project in mind, a role to discuss, or just want to connect —
+                I&#8217;d love to hear from you.
+            </p>
+            <div class="btn-row">
+                <a class="btn"
+                   href="mailto:mariusandrei210@yahoo.com"
+                   aria-label="Send an email">
+                    Email Me
+                </a>
+                <a class="btn secondary"
+                   href="https://www.linkedin.com/in/marius-bejinariu-329267153/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn profile (opens in a new tab)">
+                    LinkedIn
+                </a>
+                <a class="btn secondary"
+                   href="../assets/cv/marius-bejinariu-media-developer-cv.pdf"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Download CV PDF (opens in a new tab)">
+                    Download CV
+                </a>
             </div>
         </div>
     </section>
@@ -208,17 +895,20 @@
     <footer>
         <div>© <span id="year"></span> Marius Bejinariu — Media Developer</div>
         <div class="footer-links">
-            <a href="https://www.rtx.com/" target="_blank" rel="noopener noreferrer">RTX</a> ·
-            <a href="https://www.babcockinternational.com/" target="_blank" rel="noopener noreferrer">Babcock</a>
+            <a href="#about">About</a> ·
+            <a href="#skills">Skills</a> ·
+            <a href="#experience">Experience</a> ·
+            <a href="#projects">Projects</a> ·
+            <a href="#contact">Contact</a>
         </div>
     </footer>
 
     <a id="toTop" class="btn" href="#top" aria-label="Back to top">Back to top</a>
 </main>
 
+<script src="Script.js"></script>
 <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-<script src="script.js"></script>
 </body>
 </html>
