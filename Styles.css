@@ -637,6 +637,18 @@ header{
     gap: 14px;
 }
 
+/* Single continuous line running full height of the timeline */
+.timeline::before{
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: rgba(255,255,255,0.10);
+    border-radius: 2px;
+}
+
 .timeline-item{
     position: relative;
     display: grid;
@@ -645,27 +657,17 @@ header{
     align-items: start;
 }
 
-.timeline-item::before{
-    content: "";
-    position: absolute;
-    left: 12px;
-    top: 0;
-    bottom: -14px;
-    width: 2px;
-    background: rgba(255,255,255,0.10);
-}
-.timeline-item:last-child::before{ bottom: 0; }
-
 .timeline-dot{
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
     border-radius: 999px;
     justify-self: center;
     margin-top: 0;
     background: rgba(225,29,46,0.95);
-    box-shadow: 0 0 0 4px rgba(225,29,46,0.15);
+    box-shadow: 0 0 0 4px rgba(225,29,46,0.18);
     position: relative;
     z-index: 1;
+    flex-shrink: 0;
 }
 
 
@@ -826,122 +828,31 @@ section[id], .timeline-item[id]{
    Desktop and tablet layouts are completely unaffected.
    ========================= */
 @media (max-width: 480px) {
-
-    /* --- Base font size reduction --- */
-    body {
-        font-size: 0.94rem;
-    }
-
-    /* --- Headings --- */
+    body { font-size: 0.94rem; }
     h1 { font-size: 1.45rem; line-height: 1.25; }
     h2 { font-size: 1.15rem; }
     h3 { font-size: 1.0rem; }
-
-    /* --- Container: tighter side margins --- */
-    .container {
-        width: calc(100% - 24px);
-        padding: 12px 0 20px;
-    }
-
-    /* --- Cards and tiles: reduce padding --- */
-    .card-inner, .tile-inner {
-        padding: 18px;
-    }
-
-    /* --- Contact card: reduce oversized padding --- */
-    .contact-card .card-inner {
-        padding: 28px 18px;
-    }
-    .contact-card h1 {
-        font-size: 1.5rem;
-    }
-
-    /* --- Buttons: full width and easier to tap --- */
-    .btn-row {
-        flex-direction: column;
-        gap: 8px;
-    }
-    .btn {
-        width: 100%;
-        justify-content: center;
-        padding: 13px 16px;
-        min-height: 48px;
-    }
-
-    /* --- Gallery buttons: larger tap target --- */
-    .gallery-btn {
-        width: 48px;
-        height: 48px;
-        min-width: 48px;
-        min-height: 48px;
-    }
-
-    /* --- Timeline: tighter on narrow screens --- */
-    .timeline-item {
-        grid-template-columns: 22px 1fr;
-        gap: 8px;
-    }
-    .timeline {
-        gap: 10px;
-    }
-
-    /* --- Section spacing: tighter --- */
+    .container { width: calc(100% - 24px); padding: 12px 0 20px; }
+    .card-inner, .tile-inner { padding: 18px; }
+    .contact-card .card-inner { padding: 28px 18px; }
+    .contact-card h1 { font-size: 1.5rem; }
+    .btn-row { flex-direction: column; gap: 8px; }
+    .btn { width: 100%; justify-content: center; padding: 13px 16px; min-height: 48px; }
+    .gallery-btn { width: 48px; height: 48px; min-width: 48px; min-height: 48px; }
+    .timeline-item { grid-template-columns: 24px 1fr; gap: 8px; }
+    .timeline::before { left: 11px; }
+    .timeline { gap: 10px; }
     .section { margin-top: 10px; }
-
-    /* --- Skills grid: single column --- */
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* --- Companies grid: 2 columns --- */
-    .companies-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-    }
-
-    /* --- Section head: stack vertically --- */
-    .section-head {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 6px;
-    }
-
-    /* --- Back-to-top: safe area for iPhone home bar --- */
-    #toTop {
-        bottom: calc(18px + env(safe-area-inset-bottom, 0px));
-        right: 14px;
-    }
-
-    /* --- Nav: tighter --- */
-    .nav {
-        width: calc(100% - 24px);
-    }
+    .skills-grid { grid-template-columns: 1fr; }
+    .companies-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .section-head { flex-direction: column; align-items: flex-start; gap: 6px; }
+    #toTop { bottom: calc(18px + env(safe-area-inset-bottom, 0px)); right: 14px; }
+    .nav { width: calc(100% - 24px); }
     .brand strong { font-size: 0.9rem; }
-    .brand span   { font-size: 0.78rem; }
-
-    /* --- Kicker: smaller --- */
+    .brand span { font-size: 0.78rem; }
     .kicker { font-size: 0.72rem; }
-
-    /* --- Accordion: easier to tap --- */
-    .acc-btn {
-        padding: 14px 12px;
-        min-height: 48px;
-    }
-
-    /* --- Profile photo: shorter on mobile --- */
-    .profile .photo img {
-        height: 200px;
-    }
-
-    /* --- Footer: centre on mobile --- */
-    footer {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 6px;
-    }
-    .footer-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+    .acc-btn { padding: 14px 12px; min-height: 48px; }
+    .profile .photo img { height: 200px; }
+    footer { flex-direction: column; align-items: center; text-align: center; gap: 6px; }
+    .footer-links { flex-wrap: wrap; justify-content: center; }
 }

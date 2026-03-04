@@ -474,6 +474,11 @@
 
             const vh = window.innerHeight || document.documentElement.clientHeight || 800;
 
+            // Detect if user has scrolled to the very bottom of the page
+            const scrollBottom = window.scrollY + vh;
+            const pageHeight   = document.documentElement.scrollHeight;
+            const atBottom     = pageHeight - scrollBottom <= 5;
+
             // Step 1: move each dot and record its absolute screen Y centre
             const dotData = []; // { dot, screenY }
 
@@ -486,16 +491,16 @@
 
                 const entered = vh - rect.top;
                 const total   = h + vh;
-                const p       = clamp01(entered / total);
+                // Force p=1 for all items when page is fully scrolled to bottom
+                const p       = atBottom ? 1 : clamp01(entered / total);
                 const eased   = easeInOut(p);
 
-                const dotSize = 14;
-                const travel  = Math.max(0, item.offsetHeight - dotSize);
+                const travel  = Math.max(0, item.offsetHeight);
                 const y       = eased * travel;
 
                 dot.style.setProperty("--dot-runner-y", `${y.toFixed(1)}px`);
 
-                const isActive = p > 0.20 && p < 0.80;
+                const isActive = p > 0.10 && p < 0.95;
                 dot.classList.toggle("dot-active", isActive);
 
                 // Absolute screen Y of dot centre after transform
