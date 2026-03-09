@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ebe276c-b27a-4922-a547-d75f9b49cdff" name="Changes" comment="Merge branch 'mariusbarius.github.io' of https://github.com/Mariusbarius/mariusbarius.github.io into mariusbarius.github.io">
+    <list default="true" id="2ebe276c-b27a-4922-a547-d75f9b49cdff" name="Changes" comment="Merge branch 'main' of https://github.com/Mariusbarius/mariusbarius.github.io">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/gallery/placeholder-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gallery/placeholder-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,6 +134,7 @@
       <workItem from="1772656684624" duration="384000" />
       <workItem from="1772659743377" duration="814000" />
       <workItem from="1773041335961" duration="634000" />
+      <workItem from="1773312074357" duration="4627000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <option name="closed" value="true" />
@@ -230,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773071838432</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Merge branch 'main' of https://github.com/Mariusbarius/mariusbarius.github.io">
+      <option name="closed" value="true" />
+      <created>1773075645067</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1773075645067</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,6 +274,7 @@
     <MESSAGE value="Commit" />
     <MESSAGE value="Merge branch 'mariusbarius.github.io' of https://github.com/Mariusbarius/mariusbarius.github.io into mariusbarius.github.io&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="Merge branch 'mariusbarius.github.io' of https://github.com/Mariusbarius/mariusbarius.github.io into mariusbarius.github.io" />
-    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'mariusbarius.github.io' of https://github.com/Mariusbarius/mariusbarius.github.io into mariusbarius.github.io" />
+    <MESSAGE value="Merge branch 'main' of https://github.com/Mariusbarius/mariusbarius.github.io" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'main' of https://github.com/Mariusbarius/mariusbarius.github.io" />
   </component>
 </project>
