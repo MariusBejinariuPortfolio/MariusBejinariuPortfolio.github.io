@@ -820,13 +820,16 @@
                         </p>
 
                         <div class="project-media project-media-4x3 project-media-contain" aria-label="Animations gallery">
-                            <img
+                            <video
                                     id="animationGalleryImage"
                                     class="gallery-image"
-                                    src="assets/animations/placeholder-1.gif"
-                                    alt="Animation preview"
-                                    loading="lazy"
-                            />
+                                    src="assets/animations/placeholder-1.mp4"
+                                    autoplay
+                                    loop
+                                    muted
+                                    playsinline
+                                    aria-label="Animation preview"
+                            ></video>
 
                             <div class="gallery-controls">
                                 <button class="gallery-btn" type="button" id="animPrev" aria-label="Previous animation">←</button>
@@ -839,7 +842,7 @@
 
                         <div class="badge-row" style="margin-top:12px;">
                             <span class="badge">Animation</span>
-                            <span class="badge">GIF</span>
+                            <span class="badge">MP4</span>
                             <span class="badge">Motion</span>
                             <span class="badge">Blender</span>
                             <span class="badge">Maya</span>
