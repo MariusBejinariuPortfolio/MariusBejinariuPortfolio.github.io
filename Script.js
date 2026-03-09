@@ -104,6 +104,44 @@
     }
 
     /* =========================
+       COMPANY LOGO LINKS — scroll to experience tile + auto-expand first accordion
+       ========================= */
+    document.querySelectorAll('.company-logo[href^="#"]').forEach((logo) => {
+        logo.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = logo.getAttribute("href").slice(1);
+            const target = document.getElementById(targetId);
+            if (!target) return;
+
+            // Smooth scroll to the tile
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+
+            // Auto-expand the first accordion inside the tile if not already open
+            const firstAccItem = target.querySelector(".acc-item");
+            if (firstAccItem && !firstAccItem.classList.contains("open")) {
+                expand(firstAccItem);
+            }
+        });
+    });
+
+    /* =========================
+       COMPANY LOGO LINKS — scroll to experience tile + auto-expand first accordion
+       ========================= */
+    document.querySelectorAll('.company-logo[href^="#"]').forEach((logo) => {
+        logo.addEventListener("click", (e) => {
+            e.preventDefault();
+            const targetId = logo.getAttribute("href").slice(1);
+            const target = document.getElementById(targetId);
+            if (!target) return;
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+            const firstAccItem = target.querySelector(".acc-item");
+            if (firstAccItem && !firstAccItem.classList.contains("open")) {
+                expand(firstAccItem);
+            }
+        });
+    });
+
+    /* =========================
        ACCORDION (Experience Page)
        ========================= */
     document.querySelectorAll(".acc-btn").forEach((btn) => {
@@ -247,6 +285,9 @@
         // Load first so fullscreen isn't blank
         if (iframe.dataset.loaded !== "1") loadUnityEmbed(iframeId);
 
+        // Use native browser fullscreen on the wrapper div.
+        // The canvas fills the wrapper via CSS (width/height 100%),
+        // so this works for all Unity builds without needing postMessage.
         const fsEl = document.fullscreenElement || document.webkitFullscreenElement || null;
         if (fsEl === embed) {
             exitFullscreen();
@@ -312,7 +353,6 @@
         if (!img || !prev || !next || !counter) return;
         if (!sources || !sources.length) return;
 
-        // Detect if this gallery element is a <video> tag
         const isVideo = img.tagName.toLowerCase() === "video";
 
         let index = 0;
@@ -331,11 +371,7 @@
             index = (nextIndex + sources.length) % sources.length;
             updateCounter();
             img.src = sources[index];
-            // For <video> elements, must call load() then play() after changing src
-            if (isVideo) {
-                img.load();
-                img.play().catch(() => {});
-            }
+            if (isVideo) { img.load(); img.play().catch(() => {}); }
         }
 
         img.addEventListener("error", () => {
@@ -350,10 +386,7 @@
                 index = nextIndex;
                 updateCounter();
                 img.src = sources[index];
-                if (isVideo) {
-                    img.load();
-                    img.play().catch(() => {});
-                }
+                if (isVideo) { img.load(); img.play().catch(() => {}); }
                 return;
             }
         });
@@ -432,7 +465,6 @@
             "assets/animations/placeholder-6.mp4",
             "assets/animations/placeholder-7.mp4",
             "assets/animations/placeholder-8.mp4",
-            "assets/animations/placeholder-9.mp4",
         ],
         keyLeft: "a",
         keyRight: "d",
@@ -486,6 +518,10 @@
 
             const vh = window.innerHeight || document.documentElement.clientHeight || 800;
 
+            const scrollBottom = window.scrollY + vh;
+            const pageHeight   = document.documentElement.scrollHeight;
+            const atBottom     = pageHeight - scrollBottom <= 5;
+
             // Step 1: move each dot and record its absolute screen Y centre
             const dotData = []; // { dot, screenY }
 
@@ -498,16 +534,15 @@
 
                 const entered = vh - rect.top;
                 const total   = h + vh;
-                const p       = clamp01(entered / total);
+                const p       = atBottom ? 1 : clamp01(entered / total);
                 const eased   = easeInOut(p);
 
-                const dotSize = 14;
-                const travel  = Math.max(0, item.offsetHeight - dotSize);
+                const travel  = Math.max(0, item.offsetHeight);
                 const y       = eased * travel;
 
                 dot.style.setProperty("--dot-runner-y", `${y.toFixed(1)}px`);
 
-                const isActive = p > 0.20 && p < 0.80;
+                const isActive = p > 0.10 && p < 0.95;
                 dot.classList.toggle("dot-active", isActive);
 
                 // Absolute screen Y of dot centre after transform
