@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2ebe276c-b27a-4922-a547-d75f9b49cdff" name="Changes" comment="Merge branch 'main' of https://github.com/Mariusbarius/mariusbarius.github.io">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/gallery/placeholder-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/gallery/placeholder-3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/unity-builds/item-inspector/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/unity-builds/item-inspector/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,12 +48,12 @@
     &quot;assignee&quot;: &quot;Mariusbarius&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Mariusbarius/mariusbarius.github.io.git&quot;,
-    &quot;accountId&quot;: &quot;7788ba5b-fe5b-4099-956b-945fb97d9611&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MariusBejinariuPortfolio/MariusBejinariuPortfolio.github.io.git",
+    "accountId": "7788ba5b-fe5b-4099-956b-945fb97d9611"
   }
-}</component>
+}]]></component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
